@@ -1,3 +1,4 @@
+import math  # сделано для последнего цикла 
 duration = int(input('Введите промежуток времени в секундах: '))
 minute = duration // 60
 hour = minute // 60
@@ -17,7 +18,7 @@ elif duration >= 86400 and duration < 2592000:
     minute = minute % 60
     hour = hour % 24
     print(day, 'д', hour, 'ч', minute, 'мин', duration, 'сек')
-elif duration >= 2592000 and duration < 31104000:
+elif duration >= 2592000 and duration < math.inf:
     duration = duration % 60
     minute = minute % 60
     hour = hour % 24
